@@ -1,1 +1,1 @@
-web: gunicorn bangladigit.wsgi --log-file -
+web: gunicorn bangladigit.wsgi
