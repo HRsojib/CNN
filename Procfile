@@ -1,0 +1,1 @@
+echo web: gunicorn bangladigit.wsgi --log-file -
