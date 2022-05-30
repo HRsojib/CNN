@@ -59,8 +59,17 @@ def value(arr):
                     return "="
 
 
+
+
+
 # Create your views here.
 def index(request):
+    return render(request,'index.html')
+
+def guide(request):
+    return render(request,'mathguide.html')
+
+def upload(request):
     dir=MEDIA+'/images/'
     for f in os.listdir(dir):
             os.remove(os.path.join(dir, f))
@@ -116,10 +125,10 @@ def index(request):
                 rightexp = eval(exp[1])
                 if leftexp == rightexp:
                     vardict=True
-            return render(request, 'index.html', {'expression' : expression,'form' : form,'vardict':vardict,'img':img_obj})
+            return render(request, 'upload.html', {'expression' : expression,'form' : form,'vardict':vardict,'img':img_obj})
     else:
         form =handwritingForm()
-    return render(request, 'index.html', {'form' : form})
+    return render(request, 'upload.html', {'form' : form})
   
 
 
