@@ -5,7 +5,7 @@ https://sourabhbajaj.com/mac-setup/Python/virtualenv.html
 
 
 # try this commands to run this 
-pip install -r requirements.txt 
-python manage.py runserver
+- pip install -r requirements.txt 
+- python manage.py runserver
 
 
